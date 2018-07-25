@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element choice="3" default="legal" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="choice">
+            <choice>
+                <element label="Facilities" value="facilities"/>
+                <element label="Human Resources" value="hr"/>
+                <element label="Legal" value="legal"/>
+                <element label="My department" value="it"/>
+            </choice>
+        </element>
+        <element choice="3" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="choice">
+            <choice>
+                <element label="Facilities 1" value="facilities1"/>
+                <element label="Facilities 2" value="facilities2"/>
+                <element label="Human Resources 1" value="hr1"/>
+                <element label="Human Resources 2" value="hr2"/>
+            </choice>
+        </element>
+    </element>
+</database>
